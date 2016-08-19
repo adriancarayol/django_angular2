@@ -1,0 +1,14 @@
+<header>
+    {{titulo}}
+</header>
+<nav id="nav">
+  <ul>
+    <li><a [routerLink]="['Home']">Home</a></li>
+    <li><a>Random restaurante</a></li>
+    <li><a [routerLink]="['CrearRestaurante']">Crear restaurante</a></li>
+  </ul>
+</nav>
+<section id="main">
+    <router-outlet></router-outlet>
+    <div class="clearfix"></div>
+</section>

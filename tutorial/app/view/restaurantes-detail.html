@@ -1,0 +1,13 @@
+<h1>DETALLE DEL RESTAURANTE {{parametro}}</h1>
+<a [routerLink]="['Home']">Volver</a>
+<div *ngIf="restaurante" class="restaurante-detail">
+  <h1>Restaurante: {{restaurante.code}}</h1>
+  <p class="title">
+    <span [ngSwitch]="restaurante.language">
+      <span *ngSwitchCase="'python'">¡PYTHON!</span>
+    </span>
+  </p>
+  <p>
+    {{restaurante.title}}
+  </p>
+</div>

@@ -1,0 +1,22 @@
+<h2 class="title">{{titulo}}</h2>
+<ul id="restaurante-list" class="restaurante-list-class">
+  <li class="loading" *ngIf="loading == 'show'">
+    <img src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif">
+  </li>
+  <li class="restaurante-item" *ngFor="let restaurante of restaurantes">
+    <div class="data">
+      <h4>Codigo: {{restaurante.code}}</h4>
+      <p>ID: {{restaurante.id}}</p>
+      <p>Lenguaje: {{restaurante.language}}</p>
+      <p>Lineno: {{restaurante.linenos}}</p>
+      <p>Estilo: {{restaurante.style}}</p>
+      <p>Titulo: {{restaurante.title}}</p>
+    </div>
+    <div class="controls">
+      <a [routerLink]="['Restaurante', {id: restaurante.id}]" class="btn btn-ver" href="#">Ver</a>
+      <a class="btn btn-edit" href="#">Eliminar</a>
+      <a class="btn btn-del" href="#">Editar</a>
+    </div>
+    <div class="clearfix"></div>
+  </li>
+</ul>

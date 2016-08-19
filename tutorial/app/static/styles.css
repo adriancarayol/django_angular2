@@ -1,0 +1,99 @@
+.clearfix {
+    float: none;
+    clear: both;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: Helvetica, Arial;
+
+}
+
+section#content {
+    width: 80%;
+    min-height: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ddd;
+}
+#main {
+  padding: 15px;
+}
+header {
+    padding: 10px;
+    background-color: #1e88e5;
+    font-size: 3em;
+}
+
+.title {
+  padding: 10px;
+  color: #555;
+}
+#restaurantes-list {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: block;
+}
+.restaurante-item {
+  list-style: none;
+  width: 100%;
+  border-top: 2px solid #1e88e5;
+  height: 250px;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #555;
+}
+.restaurante-item .data {
+  float: left;
+  margin-left: 2%;
+}
+
+.restaurante-item .controls {
+  float: right;
+}
+
+.restaurante-item .btn {
+  font-size: 1.1em;
+  border: 1px solid #555;
+  border-color: #eee;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #f0f0f0;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  background: #1e88e5;
+}
+.btn-edit {
+  background: green !important;
+}
+.btn-del {
+  background: tomato !important;
+}
+
+.loading {
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  width: 100%;
+  background-color: #eee;
+  height: 45px;
+  font-size: 1.2em;
+  border-bottom: 2px solid #555;
+}
+nav ul li {
+  display: inline-block;
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
